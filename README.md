@@ -1,5 +1,8 @@
-# SageMaker Deployment Project
+## Project Overview
 
-The notebook and Python files provided here, once completed, result in a simple web app which interacts with a deployed recurrent neural network performing sentiment analysis on movie reviews. This project assumes some familiarity with SageMaker, the mini-project, Sentiment Analysis using XGBoost, should provide enough background.
+This project is done as a part of the Udacity's [Deep Learning Nanodegree](https://eu.udacity.com/course/deep-learning-nanodegree--nd101). Amazon's SageMaker is an AWS Machine Learning service that allows us to deploy ML models and get inferences from the model using the provided endpoint.
 
-Please see the [README](https://github.com/udacity/sagemaker-deployment/tree/master/README.md) in the root directory for instructions on setting up a SageMaker notebook and downloading the project files (as well as the other notebooks).
+- Used SageMaker to train and deploy Sentiment Analysis model over IMDB movie reviews dataset.
+- Created Lambda function to receive input review, preprocess and get inferences from the deployed model.
+- Created API to allow access of the endpoint using a webapp.
+- Created a simple Webapp to input review and get inference by the model whether the review is POSITIVE/NEGATIVE.
